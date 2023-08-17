@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="1000" prefWidth="1100" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testchat2.Controller">
+
+    <children>
+        <Label layoutX="190.0" layoutY="25.0" prefHeight="36.0" prefWidth="220.0" text="Chat Message">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+
+        <Button fx:id="buttonSend" layoutX="474.0" layoutY="422.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="97.0" text="Send" />
+
+        <TextField fx:id="tfMessage" layoutX="44.0" layoutY="422.0" prefHeight="36.0" prefWidth="424.0" />
+
+        <ScrollPane fx:id="spMain" layoutX="44.0" layoutY="61.0" prefHeight="347.0" prefWidth="525.0">
+            <content>
+                <VBox fx:id="hboxMessage" layoutX="63.0" layoutY="80.0" prefHeight="331.0" prefWidth="486.0">
+                    <VBox>
+                        <TextArea fx:id="vboxMessage1" prefHeight="331.0" prefWidth="1108.0" />
+                    </VBox>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </children>
+
+
+</AnchorPane>
